@@ -19,7 +19,23 @@ class SignInOutTest < ApplicationSystemTestCase
     assert_text 'Signed in successfully.'
     assert_css 'h1', text: 'Welcome!'
 
+    # sign out via button
     click_button 'Sign out'
+    assert_text 'Signed out successfully.'
+    assert_css 'h2', text: 'Log in'
+  end
+
+  test 'sign out via link' do
+    visit root_path
+    assert_css 'h2', text: 'Log in'
+
+    fill_in 'Email', with: 'alice@example.com'
+    fill_in 'Password', with: 'password'
+    click_button 'Log in'
+    assert_text 'Signed in successfully.'
+    assert_css 'h1', text: 'Welcome!'
+
+    click_link 'Sign out'
     assert_text 'Signed out successfully.'
     assert_css 'h2', text: 'Log in'
   end
