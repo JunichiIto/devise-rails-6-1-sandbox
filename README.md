@@ -1,24 +1,19 @@
-# README
+# devise-rails-6-1-sandbox
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample App For Devise and Rails 6.1 with rails-ujs
 
-Things you may want to cover:
+## Run app
 
-* Ruby version
+``` 
+$ bin/setup 
+$ rails s
+```
 
-* System dependencies
+## Run tests
 
-* Configuration
+``` 
+$ rails test:all
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## LICENSE
+MIT License.
