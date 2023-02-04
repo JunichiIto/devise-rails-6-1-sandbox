@@ -58,4 +58,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "devise", github: "heartcombo/devise", branch: "ca-turbo"
-gem "responders", github: "heartcombo/responders", branch: "main"
+gem "responders", "~> 3.1"
